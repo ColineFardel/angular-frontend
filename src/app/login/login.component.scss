@@ -1,14 +1,14 @@
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
+  height: 95vh;
+  font-family: "Ubuntu-Bold";
 }
 
 .container > form {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 20%;
   margin: auto;
   flex: 3;
   justify-content: space-evenly;
@@ -23,6 +23,12 @@ input {
   border-bottom: 0.5px solid lightgray;
   box-sizing: border-box;
   text-align: center;
+  font-family: "Ubuntu-Light";
+  font-size: 20px;
+}
+
+input::placeholder {
+  color: black;
 }
 
 button {
@@ -31,6 +37,9 @@ button {
   padding: 15px;
   border-radius: 30px;
   background: transparent;
+  font-family: "Ubuntu-Medium";
+  font-size: larger;
+  text-transform: uppercase;
 }
 
 img.logo {
@@ -40,6 +49,11 @@ img.logo {
 
 .languages {
   margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: goldenrod;
 }
 
 .languages > a {
