@@ -1,9 +1,9 @@
 <div class="container">
   <img src="../../assets/img/login.jpg">
   <img class="logo" src="../../assets/img/logo.png">
-  <form>
-    <input type="text" placeholder="Login" required>
-    <input type="password" placeholder="Password" required>
+  <form [formGroup]="formData" (ngSubmit)="onClickSubmit(formData.value)">
+    <input type="text" placeholder="Login" required formControlName="userName">
+    <input type="password" placeholder="Password" required formControlName="password">
     <a href="">Forgot your password ?</a>
     <button type="submit">Login</button>
   </form>
