@@ -4,6 +4,14 @@
   padding: 0;
 }
 
+$color-primary: #274B59;
+$color-secondary : #AEAA7A;
+
+@font-face {
+  font-family: "Sonar";
+  src: url(assets/fonts/Sonar/sonar.ttf) format("truetype");
+}
+
 @font-face {
   font-family: "Ubuntu-Bold";
   src: url(assets/fonts/Ubuntu/Ubuntu-Bold.ttf) format("truetype");
