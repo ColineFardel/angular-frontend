@@ -1,25 +1,33 @@
 <app-header></app-header>
-<div class="info">
-  <div class="news">
-    <h3>Flash News</h3>
-    <div class="icons">
-      <a href="">b</a>
-      <a href="">c</a>
+<div class="container">
+  <div class="info">
+    <div class="news">
+      <h3>Flash News</h3>
+      <div class="icons">
+        <a class="icon" href="">b</a>
+        <a class="icon" href="">c</a>
+      </div>
+      <h2>Shangai</h2>
+      <p class="date">01.11.2018</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.</p>
+      <p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+      <div class="file">
+        <a class="icon" href="">j</a>
+        <p>Shangai</p>
+      </div>
     </div>
-    <h2>Shangai</h2>
-    <p>01.11.2018</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
   </div>
-  <a href="">j</a>
-  <p>Shangai</p>
-  <img class="logo" src="../../assets/img/home.jpg">
-</div>
-<div class="machines">
-<div class="card" *ngFor="let machine of machines">
-  <img class="logo" src="">
-  <h3>{{machine.name}}</h3>
-  <h5>{{machine.reference}}</h5>
-  <a href="">Almac machines</a>
-</div>
+  <div class="machines">
+    <h2>Customer machines</h2>
+    <div class="cards">
+      <div class="card" *ngFor="let machine of machines">
+        <img class="logo" src={{machine.image}}>
+        <h3>{{machine.name}}</h3>
+        <h5>{{machine.reference}}</h5>
+        <a href="">Almac machines</a>
+      </div>
+    </div>
+    <button>More machines</button>
+  </div>
 </div>

@@ -13,15 +13,18 @@ export class HomeComponent implements OnInit {
     this.machines = [
       {
         name: "BA 1008",
-        reference: "180128"
+        reference: "180128",
+        image: "../../assets/img/machine1.png"
       },
       {
         name: "CT 20",
-        reference: "180177"
+        reference: "180177",
+        image: "../../assets/img/machine2.png"
       },
       {
         name: "DECO 20S",
-        reference: "180255"
+        reference: "180255",
+        image: "../../assets/img/machine3.png"
       },
     ]
   }

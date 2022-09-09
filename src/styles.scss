@@ -7,6 +7,16 @@
 $color-primary: #274B59;
 $color-secondary : #AEAA7A;
 
+button {
+  border: 3px solid $color-primary;
+  color: $color-primary;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background: transparent;
+  font-family: "Ubuntu-Medium";
+  text-transform: uppercase;
+}
+
 @font-face {
   font-family: "Sonar";
   src: url(assets/fonts/Sonar/sonar.ttf) format("truetype");
