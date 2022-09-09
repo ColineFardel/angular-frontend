@@ -38,12 +38,10 @@ export class LoginComponent implements OnInit {
     const userName = this.formData.get('userName')!.value ?? '';
     const password = this.formData.get('password')!.value ?? '';
 
-    this.authService.login(userName, password)
-      .subscribe((data: string) => {
-        console.log("Is Login Success: " + data);
-
-        if (data) this.router.navigate(['/']);
-      });
+    const logged = this.authService.login(userName, password);
+    if (logged) {
+      this.router.navigate(['/']);
+    }
   }
 
 }
