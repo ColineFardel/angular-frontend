@@ -6,15 +6,22 @@
 
 $color-primary: #274B59;
 $color-secondary : #AEAA7A;
+$color-grey: #7a7a7a;
+$color-light-grey: #bebebe;
+$color-hover: #ededed8e;
+$color-black: #000000;
+$color-white: #ffffff;
 
 button {
-  border: 3px solid $color-primary;
+  border: 2px solid $color-primary;
   color: $color-primary;
   padding: 10px 20px;
   border-radius: 30px;
   background: transparent;
   font-family: "Ubuntu-Medium";
   text-transform: uppercase;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 @font-face {

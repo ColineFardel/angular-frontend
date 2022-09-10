@@ -1,18 +1,19 @@
 @import "../../styles";
+
 .container {
   font-family: "Ubuntu-Medium";
   margin-bottom: 20px;
 }
+
 .info {
   background-image: url("../../assets/img/home.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   padding: 30px;
-  
 }
 
 .news {
-  background-color: white;
+  background-color: $color-white;
   max-width: 30%;
   border-radius: 5px;
   padding: 30px;
@@ -33,14 +34,14 @@ a.icon {
   margin: 10px 0;
 }
 
-.icons > a {
+.icons>a {
   text-decoration: none;
   color: $color-primary;
   margin-right: 20px;
 }
 
 h5 {
-  color: rgb(180, 180, 180);
+  color: $color-grey;
   font-size: small;
   font-weight: normal;
 }
@@ -48,8 +49,8 @@ h5 {
 h3 {
   text-transform: uppercase;
   text-decoration: none;
-  color: rgb(80, 80, 80);
-  font-size: medium;
+  color: $color-grey;
+  font-size: small;
   font-weight: normal;
 }
 
@@ -61,7 +62,7 @@ h2 {
 
 p {
   font-family: "Ubuntu-Light";
-  color: rgb(180, 180, 180);
+  color: $color-grey;
   font-size: small;
   margin: 15px 0;
 }
@@ -85,6 +86,7 @@ p {
 .cards {
   display: flex;
   flex-direction: row;
+  margin: 10px;
 }
 
 .card {
@@ -97,5 +99,45 @@ p {
 }
 
 .card:hover {
-  background-color: rgb(245, 245, 245);
+  background-color: $color-hover;
+}
+
+h2.title {
+  margin: 50px;
+}
+
+/* ===================== MEDIA QUERIES (MEDIUM DEVICES) ======================= */
+
+@media screen and (max-width: 1080px) {
+
+  .cards {
+    flex-direction: column;
+    margin: 10px;
+  }
+  .news {
+    border: 0.5px solid $color-light-grey;
+    max-width: 40%;
+  }
+}
+
+/* ===================== MEDIA QUERIES (SMALL DEVICES) ===================== */
+
+@media screen and (max-width: 600px) {
+  .info {
+    background-image: none;
+  }
+
+  .news {
+    border: 0.5px solid $color-light-grey;
+    max-width: 90%;
+  }
+
+  .cards {
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  h2.title {
+    margin: 10px;
+  }
 }
