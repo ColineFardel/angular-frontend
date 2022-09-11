@@ -35,9 +35,15 @@ a.icon {
 }
 
 .icons>a {
+  font-family: "Sonar";
+  font-size: large;
   text-decoration: none;
-  color: $color-primary;
+  color: $color-light-grey;
   margin-right: 20px;
+}
+
+.icons > a.clickable {
+  color: $color-primary;
 }
 
 h5 {
@@ -114,6 +120,7 @@ h2.title {
     flex-direction: column;
     margin: 10px;
   }
+
   .news {
     border: 0.5px solid $color-light-grey;
     max-width: 40%;
